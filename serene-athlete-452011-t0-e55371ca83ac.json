@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "serene-athlete-452011-t0",
+  "private_key_id": "e55371ca83aca14cb3c1f28874349eed5519c715",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCavNN26svt5PVb\ne7OHoZpwqTCsTMIP2ViRnFHAVeL5Ev2sJmaO1H+dYn1J2iy6uHNYr8UUlgkj+C8r\nnNtDVQdq/RAl/ckanYWu3P/6T7emhhI4hrGx2EAdNPErnNBs1HD1g2Hm2biMGORn\ndNx9sr/Yczi82kdNFQSMft7RgrQwdj6ZtRCLMn/L2JG7h5V3nYHCW2PR8C5a0Mu3\nGHvMAuPQnOXXrA97tuXbXcOL50LIVKMvqFGuRo9Hz4QeLrDeth/tUhxwdi41VGWB\nU6oLHPGgwlQnvNAyISu3z/Ffy5wvWi7BxlDGg9KG5WbJIvWIc35oP2TMBtGpv/aO\n8S5wKNztAgMBAAECggEACJDjc/XTjDvciU/zxFJh5lK3axJku9PgX080B125zugK\nOvl1O/rvhZrqLKhzSXLkj8hLNLSJlQAsPFHWoYeXfYi82B2QgHSv7do2IXlARWuu\nnop2U84Q3o0LvMpVj3DDQBQh21G6Mac/HasOebbnf+gBABNlVxMOyWhMlXSS3QvY\nqe+8uiWU4JgYqic5r7SgQO/oR0O/lbkL7UnNHyjOvLR/dM33suNv2eZrmGm4eQ7u\nOcPFTYn6Wwd4ziQQAi4PUaOIMODlMi8K0WOr7FGjntC6lJRRas31gBgA4QjbkQiZ\n6wOG3S2vmHFqA5zX42GH0d9BkOCmrFHiu5SqhuBjUQKBgQDIaCfLhcS+ZSfbixnO\nDscew+2n9Fkgns/Pizf9qwT7lnswCvlMJ1f6QcJOrWHzbHGV5Dj3viNGSz1en4bj\nkq5hE4lL+s3Vw/zaVLqXCHRq173x0kSGT3MrvrhWSPiTTbKWWZkik56cMcSwfqk/\nOPjntGi3NbXaVyZ6+beBSZKKiwKBgQDFqXq8R5gpZcZbJW3KTrUVjBs7N+hsLx3w\nt3fj8/pi5hNN1wqByZCvYvkOxwBO4W7Q2CLtdkHGhDQrTuTl+gg0SaLdIcDBOOAU\n4aBR898BP9HDVdRxdlcLrsErPsf8C/ruzWbotzs+Xhao8+fTFYSGF4mp6JObzi9s\nhS30l5A9ZwKBgQCO1qXeitaC+ehhs5BN7PyBchaWyjMoa+kkPU9IDzf69fORd5De\ndYBgT7RljXCuJpICyurLsYrE1GXGZp+m3mpJqLoIHJfPD+TN3OwtMAqCCIlKrZrH\nvCMTf9k1Lsd1fkCWpv/dxCednl9ZiL2q4TmPNGgahT67g7hamFfx33WCJwKBgQCH\nO6rTQhBi0lThazwwW6Uc9txyqY+E5L+RP5TxCq1WGJ9AdE2l+mfY9tf7Oj+FuEp+\n7EEJQg1CapTexH1qsqQGUhLxQ/SCvgzhfHSZXUZHrogvInvUnOh0/7z9f1iHoxKt\nay5rLWGFDA5ozWbgTip7K4NuEcdbo7digcOtQjzXJQKBgE1DnmAen/R6TwTUXaPS\niZ8WzNgN0sD4RNf6KMdmCFCb5NSVAvWXU3P8BLvFTeADS4ZJhyqkyrJC4U6bygxZ\nMCSdZW1K3ktO7tm8s5FGOievYD5DtrNb+5byZNdn5bdTiZ0yKE0JLooI54MWCflq\n4PYuz6QFMf4q8bDbNx8V3GoH\n-----END PRIVATE KEY-----\n",
+  "client_email": "shubham-agagrwal@serene-athlete-452011-t0.iam.gserviceaccount.com",
+  "client_id": "115043761110569051912",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shubham-agagrwal%40serene-athlete-452011-t0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
