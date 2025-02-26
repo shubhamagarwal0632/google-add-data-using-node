@@ -26,7 +26,7 @@ async function getSheetsClient() {
 
   return google.sheets({ version: "v4", auth });
 }
-
+app.get("/",()=>{})
 // API Endpoint: Add Data to Google Sheet
 app.post("/add-data", async (req, res) => {
   try {
