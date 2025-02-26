@@ -4,7 +4,7 @@ const { GoogleAuth } = require("google-auth-library");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-require("dotenv").config(); // Load environment variables
+require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 9000;
@@ -14,29 +14,32 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Google Sheets Config
-const sheetId = "1OZXopBefudwPE9pgzMnwbx4RogGbr4gTQ6uPQAtBiBo"; // Your Sheet ID
-const serviceAccountKeyFile = path.join(__dirname, "serene-athlete-452011-t0-e55371ca83ac.json");
+const sheetId = "1OZXopBefudwPE9pgzMnwbx4RogGbr4gTQ6uPQAtBiBo";
 
 // Function to authenticate with Google Sheets API
 async function getSheetsClient() {
   const auth = new GoogleAuth({
-    keyFile: serviceAccountKeyFile,
+    credentials: JSON.parse(process.env.GOOGLE_CREDENTIALS_JSON),
     scopes: ["https://www.googleapis.com/auth/spreadsheets"],
   });
 
   return google.sheets({ version: "v4", auth });
 }
-app.get("/",(req,res)=>{
-  res.send('code work')
-})
-// API Endpoint: Add Data to Google Sheet
+
+// Routes
+app.get("/", (req, res) => {
+  res.send('Server is working');
+});
+
 app.post("/add-data", async (req, res) => {
   try {
     const sheets = await getSheetsClient();
-    const { values } = req.body; // Expecting JSON format { "values": [["Name", "Email", "Phone", "City"]] }
+    const { values } = req.body;
 
     if (!values || !Array.isArray(values)) {
-      return res.status(400).json({ error: "Invalid request body. Expected an array of values." });
+      return res.status(400).json({ 
+        error: "Invalid request body. Expected an array of values." 
+      });
     }
 
     const response = await sheets.spreadsheets.values.append({
@@ -46,7 +49,11 @@ app.post("/add-data", async (req, res) => {
       requestBody: { values },
     });
 
-    res.json({ success: true, message: "Data added successfully", data: response.data });
+    res.json({ 
+      success: true, 
+      message: "Data added successfully", 
+      data: response.data 
+    });
   } catch (error) {
     console.error("Error adding data:", error);
     res.status(500).json({ error: error.message });
